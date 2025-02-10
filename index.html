@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ✅ دائرة التحميل -->
+    <div id="loadingSpinner"></div>
+
+    <!-- ✅ كلمة "World Wide Chat" -->
+    <h1>🌐 World Wide Chat</h1>
+
+    <!-- ✅ شاشة تسجيل الدخول -->
+    <div id="loginScreen">
+        <h2>🚀 مرحبًا بك في World Wide Chat</h2>
+        <input type="email" id="email" placeholder="📧 البريد الإلكتروني"><br>
+        <input type="password" id="password" placeholder="🔒 كلمة المرور"><br>
+        <button onclick="loginWithEmail()">🔑 تسجيل الدخول</button>
+        <button onclick="register()">📝 إنشاء حساب</button>
+        <button onclick="loginWithGoogle()">🔵 تسجيل الدخول باستخدام Google</button>
+    </div>
+
+    <!-- ✅ قسم المحادثات -->
+    <div class="container">
+        <h2>💬 المحادثات</h2>
+        <div id="messageList"></div>
+        <textarea id="newMessage" placeholder="اكتب رسالة..."></textarea><br>
+        <button onclick="sendMessage()">✉️ إرسال</button>
+        <button onclick="logout()">🔓 تسجيل الخروج</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
